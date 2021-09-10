@@ -1,0 +1,135 @@
+CHARALLA OLAZO, CESAR
+Perceptron Multicapa
+
+Fold 0
+Nª Datos Entrenamiento = 3756
+Nª Datos Test = 418
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9323748668796592
+Tasa Clasificacion Test : 0.8110047846889952
+
+Fold 1
+Nª Datos Entrenamiento = 3756
+Nª Datos Test = 418
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9331735889243876
+Tasa Clasificacion Test : 0.8492822966507177
+
+Fold 2
+Nª Datos Entrenamiento = 3756
+Nª Datos Test = 418
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9156017039403621
+Tasa Clasificacion Test : 0.992822966507177
+
+Fold 3
+Nª Datos Entrenamiento = 3756
+Nª Datos Test = 418
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9169329073482428
+Tasa Clasificacion Test : 0.9784688995215312
+
+Fold 4
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9230769230769231
+Tasa Clasificacion Test : 0.9232613908872902
+
+Fold 5
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9214799041788662
+Tasa Clasificacion Test : 0.9112709832134293
+
+Fold 6
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9182858663827522
+Tasa Clasificacion Test : 0.9544364508393285
+
+Fold 7
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9206813947298377
+Tasa Clasificacion Test : 0.9256594724220624
+
+Fold 8
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.92467394197498
+Tasa Clasificacion Test : 0.9304556354916067
+
+Fold 9
+Nª Datos Entrenamiento = 3757
+Nª Datos Test = 417
+Cantidad de Caracteristicas = 10
+Cantidad de Clases = 2
+Parametro - Funcion de Activacion = relu
+Parametro - Tasa de Aprendizaje = 0.003
+Parametro - Maximo Iteraciones = 100000
+Cantidad de capas ocultas = 3
+Cantidad de perceptrones por capa = 5
+Tasa Clasificacion Train : 0.9212137343625233
+Tasa Clasificacion Test : 0.935251798561151
+
+
+Tasa Clasificacion Promedio en Test ---> 0.921191467878329
