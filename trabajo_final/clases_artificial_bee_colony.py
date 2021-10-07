@@ -5,7 +5,7 @@ import numpy as np
 class ClassArtificialBeeColony():
     dimensiones = 2
 
-    def __init__(self, tamano_enjambre, limite_inferior, limite_superior, numero_iteraciones):
+    def __init__(self, tamano_enjambre, limite_inferior, limite_superior, numero_iteraciones, poblacion_inicial):
         # Parametros iniciales
         self.tamano_enjambre = tamano_enjambre
         self.tamano_fuente_comida = int(tamano_enjambre / 2)
@@ -15,6 +15,8 @@ class ClassArtificialBeeColony():
         self.limite_superior = limite_superior
         self.numero_iteraciones = numero_iteraciones
         self.limite_a_descartar = self.tamano_fuente_comida * self.dimensiones
+        self.poblacion_inicial = poblacion_inicial
+        self.poblacion_inicial_print = poblacion_inicial.copy()
 
     # def calcular_funcion_objetivo(self, x, y):
     #     # return(x + 2 * y - 7) ** 2 + (2 * x + y - 5) ** 2 # ejemplo de clase pasada AG
@@ -150,8 +152,10 @@ class ClassArtificialBeeColony():
                 uniform(self.limite_inferior, self.limite_superior)]
 
     # Poblacion inicial
+    # def crear_poblacion_inicial_fuente_comida(self):
+    #     return [self.generar_nueva_fuente_comida() for _ in range(self.tamano_fuente_comida)]
     def crear_poblacion_inicial_fuente_comida(self):
-        return [self.generar_nueva_fuente_comida() for _ in range(self.tamano_fuente_comida)]
+        return self.poblacion_inicial
 
     def ejecutar_iteraciones(self):
         # Iteraciones Generales
@@ -187,8 +191,10 @@ class ClassArtificialBeeColony():
                     optima_fuente_comida["valor_funcion"] = self.calcular_funcion_objetivo(fuente_comida[0],
                                                                                            fuente_comida[1])
                     optima_fuente_comida["fitness"] = fitness
-            # else:
-            #     print(key, fuente_descartadas[key])
+            else:
+                print(key, " --> no hay solucion de fuente de comida para abejas scout")
 
+        print("------------- POBLACION INICIAL!!! -------------")
+        print("Poblacion Inicial -->", self.poblacion_inicial_print)
         print("------------- SOLUCION OPTIMA FINAL!!! -------------")
         print(optima_fuente_comida)
