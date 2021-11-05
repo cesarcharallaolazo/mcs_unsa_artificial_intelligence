@@ -18,14 +18,6 @@ class ClassArtificialBeeColony():
         self.poblacion_inicial = poblacion_inicial
         self.poblacion_inicial_print = poblacion_inicial.copy()
 
-    # def calcular_funcion_objetivo(self, x, y):
-    #     # return(x + 2 * y - 7) ** 2 + (2 * x + y - 5) ** 2 # ejemplo de clase pasada AG
-    #     # return 0.26 * (x ** 2 + y ** 2) - 0.48 * x * y  # matyas function
-    #     return (1.5 - x + x * y) ** 2 + (2.25 - x + x * (y ** 2)) ** 2 + (
-    #             2.625 - x + x * (y ** 3)) ** 2  # beale function
-    #     # return 2 * (x ** 2) - 1.05 * (x ** 4) + (x ** 6) / 6 + x * y + y ** 2  # three-hump camel function
-    #     # return (1 + ((x + y + 1) ** 2) * (19 - 14 * x + 3 * (x ** 2) - 14 * y + 6 * x * y + 3 * (y ** 2))) * (30 + ((2 * x - 3 * y) ** 2) * (18 - 32 * x + 12 * (x ** 2) + 48 * y - 36 * x * y + 27 * (y ** 2)))  # goldstein-price function
-
     def calcular_fitness(self, x, y):
         f = self.calcular_funcion_objetivo(x, y)
         return 1 / (1 + f) if f >= 0 else 1 + abs(f)
@@ -166,13 +158,14 @@ class ClassArtificialBeeColony():
             # print("ITERACION ---> ", iter)
             fuente_descartadas[f"iteracion_{str(iter)}"] = {}
             poblacion_fuente_comida, trials_poblacion, vector_probabilidad \
-                = self.fase_optimizacion_abejas_obreras(self.numero_abejas_obreras, poblacion_fuente_comida, trials_poblacion)
+                = self.fase_optimizacion_abejas_obreras(self.numero_abejas_obreras, poblacion_fuente_comida,
+                                                        trials_poblacion)
             poblacion_fuente_comida, trials_poblacion = \
                 self.fase_optimizacion_abejas_observadoras(self.numero_abejas_observadoras, poblacion_fuente_comida,
-                                                      trials_poblacion, vector_probabilidad)
+                                                           trials_poblacion, vector_probabilidad)
             poblacion_fuente_comida, trials_poblacion, fuente_descartadas = \
                 self.fase_optimizacion_abejas_scout(poblacion_fuente_comida, trials_poblacion,
-                                               self.limite_a_descartar, fuente_descartadas, iter)
+                                                    self.limite_a_descartar, fuente_descartadas, iter)
 
         optima_fuente_comida = {}
         optima_fuente_comida["solucion/fuente_comida"] = []
